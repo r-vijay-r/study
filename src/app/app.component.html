@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<div class="color-title">Pick a Color</div>
+<color-picker #picker (color)="previewer.color=$event"></color-picker>
+<color-preview #preview></color-preview>
+<button (click)="picker.reset()">reset</button>
